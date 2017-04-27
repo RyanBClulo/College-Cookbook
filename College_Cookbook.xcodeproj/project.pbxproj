@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		440530DE1EA4156D0096F1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440530DD1EA4156D0096F1CF /* AppDelegate.swift */; };
+		440530E01EA4156D0096F1CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440530DF1EA4156D0096F1CF /* ViewController.swift */; };
+		440530E31EA4156D0096F1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440530E11EA4156D0096F1CF /* Main.storyboard */; };
+		440530E51EA4156D0096F1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440530E41EA4156D0096F1CF /* Assets.xcassets */; };
+		440530E81EA4156D0096F1CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440530E61EA4156D0096F1CF /* LaunchScreen.storyboard */; };
+		440530F31EA4156D0096F1CF /* College_CookbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440530F21EA4156D0096F1CF /* College_CookbookTests.swift */; };
+		440530FE1EA4156D0096F1CF /* College_CookbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440530FD1EA4156D0096F1CF /* College_CookbookUITests.swift */; };
+		440531031EA4156D0096F1CF /* College_Cookbook WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 440531021EA4156D0096F1CF /* College_Cookbook WatchKit App.app */; };
+		440531091EA4156D0096F1CF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440531071EA4156D0096F1CF /* Interface.storyboard */; };
+		4405310B1EA4156D0096F1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4405310A1EA4156D0096F1CF /* Assets.xcassets */; };
+		440531121EA4156E0096F1CF /* College_Cookbook WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 440531111EA4156E0096F1CF /* College_Cookbook WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		440531191EA4156E0096F1CF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440531181EA4156E0096F1CF /* InterfaceController.swift */; };
+		4405311B1EA4156E0096F1CF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4405311A1EA4156E0096F1CF /* ExtensionDelegate.swift */; };
+		4405311D1EA4156E0096F1CF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4405311C1EA4156E0096F1CF /* NotificationController.swift */; };
+		4405311F1EA4156E0096F1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4405311E1EA4156E0096F1CF /* Assets.xcassets */; };
+		444EFE6E1EAD84CD0092481D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFE6C1EAD84CD0092481D /* DetailViewController.swift */; };
+		444EFE6F1EAD84CD0092481D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFE6D1EAD84CD0092481D /* MasterViewController.swift */; };
+		444EFE711EADC2060092481D /* recipeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFE701EADC2060092481D /* recipeObject.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		440530EF1EA4156D0096F1CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 440530D21EA4156D0096F1CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 440530D91EA4156D0096F1CF;
+			remoteInfo = College_Cookbook;
+		};
+		440530FA1EA4156D0096F1CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 440530D21EA4156D0096F1CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 440530D91EA4156D0096F1CF;
+			remoteInfo = College_Cookbook;
+		};
+		440531041EA4156D0096F1CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 440530D21EA4156D0096F1CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 440531011EA4156D0096F1CF;
+			remoteInfo = "College_Cookbook WatchKit App";
+		};
+		440531131EA4156E0096F1CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 440530D21EA4156D0096F1CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 440531101EA4156E0096F1CF;
+			remoteInfo = "College_Cookbook WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		440531261EA4156E0096F1CF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				440531121EA4156E0096F1CF /* College_Cookbook WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4405312A1EA4156E0096F1CF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				440531031EA4156D0096F1CF /* College_Cookbook WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		440530DA1EA4156D0096F1CF /* College_Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = College_Cookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		440530DD1EA4156D0096F1CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		440530DF1EA4156D0096F1CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		440530E21EA4156D0096F1CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		440530E41EA4156D0096F1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		440530E71EA4156D0096F1CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		440530E91EA4156D0096F1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440530EE1EA4156D0096F1CF /* College_CookbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = College_CookbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		440530F21EA4156D0096F1CF /* College_CookbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_CookbookTests.swift; sourceTree = "<group>"; };
+		440530F41EA4156D0096F1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440530F91EA4156D0096F1CF /* College_CookbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = College_CookbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		440530FD1EA4156D0096F1CF /* College_CookbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_CookbookUITests.swift; sourceTree = "<group>"; };
+		440530FF1EA4156D0096F1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440531021EA4156D0096F1CF /* College_Cookbook WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "College_Cookbook WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		440531081EA4156D0096F1CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4405310A1EA4156D0096F1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4405310C1EA4156E0096F1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440531111EA4156E0096F1CF /* College_Cookbook WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "College_Cookbook WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		440531171EA4156E0096F1CF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		440531181EA4156E0096F1CF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4405311A1EA4156E0096F1CF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4405311C1EA4156E0096F1CF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4405311E1EA4156E0096F1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		440531201EA4156E0096F1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		444EFE6C1EAD84CD0092481D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		444EFE6D1EAD84CD0092481D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		444EFE701EADC2060092481D /* recipeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipeObject.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		440530D71EA4156D0096F1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		440530EB1EA4156D0096F1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		440530F61EA4156D0096F1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4405310E1EA4156E0096F1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		440530D11EA4156D0096F1CF = {
+			isa = PBXGroup;
+			children = (
+				440530DC1EA4156D0096F1CF /* College_Cookbook */,
+				440530F11EA4156D0096F1CF /* College_CookbookTests */,
+				440530FC1EA4156D0096F1CF /* College_CookbookUITests */,
+				440531061EA4156D0096F1CF /* College_Cookbook WatchKit App */,
+				440531151EA4156E0096F1CF /* College_Cookbook WatchKit Extension */,
+				440530DB1EA4156D0096F1CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		440530DB1EA4156D0096F1CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				440530DA1EA4156D0096F1CF /* College_Cookbook.app */,
+				440530EE1EA4156D0096F1CF /* College_CookbookTests.xctest */,
+				440530F91EA4156D0096F1CF /* College_CookbookUITests.xctest */,
+				440531021EA4156D0096F1CF /* College_Cookbook WatchKit App.app */,
+				440531111EA4156E0096F1CF /* College_Cookbook WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		440530DC1EA4156D0096F1CF /* College_Cookbook */ = {
+			isa = PBXGroup;
+			children = (
+				440530DD1EA4156D0096F1CF /* AppDelegate.swift */,
+				444EFE6C1EAD84CD0092481D /* DetailViewController.swift */,
+				444EFE6D1EAD84CD0092481D /* MasterViewController.swift */,
+				440530DF1EA4156D0096F1CF /* ViewController.swift */,
+				440530E11EA4156D0096F1CF /* Main.storyboard */,
+				444EFE701EADC2060092481D /* recipeObject.swift */,
+				440530E41EA4156D0096F1CF /* Assets.xcassets */,
+				440530E61EA4156D0096F1CF /* LaunchScreen.storyboard */,
+				440530E91EA4156D0096F1CF /* Info.plist */,
+			);
+			path = College_Cookbook;
+			sourceTree = "<group>";
+		};
+		440530F11EA4156D0096F1CF /* College_CookbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				440530F21EA4156D0096F1CF /* College_CookbookTests.swift */,
+				440530F41EA4156D0096F1CF /* Info.plist */,
+			);
+			path = College_CookbookTests;
+			sourceTree = "<group>";
+		};
+		440530FC1EA4156D0096F1CF /* College_CookbookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				440530FD1EA4156D0096F1CF /* College_CookbookUITests.swift */,
+				440530FF1EA4156D0096F1CF /* Info.plist */,
+			);
+			path = College_CookbookUITests;
+			sourceTree = "<group>";
+		};
+		440531061EA4156D0096F1CF /* College_Cookbook WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				440531071EA4156D0096F1CF /* Interface.storyboard */,
+				4405310A1EA4156D0096F1CF /* Assets.xcassets */,
+				4405310C1EA4156E0096F1CF /* Info.plist */,
+			);
+			path = "College_Cookbook WatchKit App";
+			sourceTree = "<group>";
+		};
+		440531151EA4156E0096F1CF /* College_Cookbook WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				440531181EA4156E0096F1CF /* InterfaceController.swift */,
+				4405311A1EA4156E0096F1CF /* ExtensionDelegate.swift */,
+				4405311C1EA4156E0096F1CF /* NotificationController.swift */,
+				4405311E1EA4156E0096F1CF /* Assets.xcassets */,
+				440531201EA4156E0096F1CF /* Info.plist */,
+				440531161EA4156E0096F1CF /* Supporting Files */,
+			);
+			path = "College_Cookbook WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		440531161EA4156E0096F1CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				440531171EA4156E0096F1CF /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		440530D91EA4156D0096F1CF /* College_Cookbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4405312B1EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_Cookbook" */;
+			buildPhases = (
+				440530D61EA4156D0096F1CF /* Sources */,
+				440530D71EA4156D0096F1CF /* Frameworks */,
+				440530D81EA4156D0096F1CF /* Resources */,
+				4405312A1EA4156E0096F1CF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				440531051EA4156D0096F1CF /* PBXTargetDependency */,
+			);
+			name = College_Cookbook;
+			productName = College_Cookbook;
+			productReference = 440530DA1EA4156D0096F1CF /* College_Cookbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		440530ED1EA4156D0096F1CF /* College_CookbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4405312E1EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_CookbookTests" */;
+			buildPhases = (
+				440530EA1EA4156D0096F1CF /* Sources */,
+				440530EB1EA4156D0096F1CF /* Frameworks */,
+				440530EC1EA4156D0096F1CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				440530F01EA4156D0096F1CF /* PBXTargetDependency */,
+			);
+			name = College_CookbookTests;
+			productName = College_CookbookTests;
+			productReference = 440530EE1EA4156D0096F1CF /* College_CookbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		440530F81EA4156D0096F1CF /* College_CookbookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 440531311EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_CookbookUITests" */;
+			buildPhases = (
+				440530F51EA4156D0096F1CF /* Sources */,
+				440530F61EA4156D0096F1CF /* Frameworks */,
+				440530F71EA4156D0096F1CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				440530FB1EA4156D0096F1CF /* PBXTargetDependency */,
+			);
+			name = College_CookbookUITests;
+			productName = College_CookbookUITests;
+			productReference = 440530F91EA4156D0096F1CF /* College_CookbookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		440531011EA4156D0096F1CF /* College_Cookbook WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 440531271EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_Cookbook WatchKit App" */;
+			buildPhases = (
+				440531001EA4156D0096F1CF /* Resources */,
+				440531261EA4156E0096F1CF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				440531141EA4156E0096F1CF /* PBXTargetDependency */,
+			);
+			name = "College_Cookbook WatchKit App";
+			productName = "College_Cookbook WatchKit App";
+			productReference = 440531021EA4156D0096F1CF /* College_Cookbook WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		440531101EA4156E0096F1CF /* College_Cookbook WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 440531231EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_Cookbook WatchKit Extension" */;
+			buildPhases = (
+				4405310D1EA4156E0096F1CF /* Sources */,
+				4405310E1EA4156E0096F1CF /* Frameworks */,
+				4405310F1EA4156E0096F1CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "College_Cookbook WatchKit Extension";
+			productName = "College_Cookbook WatchKit Extension";
+			productReference = 440531111EA4156E0096F1CF /* College_Cookbook WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		440530D21EA4156D0096F1CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = CollegeCB_Team;
+				TargetAttributes = {
+					440530D91EA4156D0096F1CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					440530ED1EA4156D0096F1CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 440530D91EA4156D0096F1CF;
+					};
+					440530F81EA4156D0096F1CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 440530D91EA4156D0096F1CF;
+					};
+					440531011EA4156D0096F1CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					440531101EA4156E0096F1CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 440530D51EA4156D0096F1CF /* Build configuration list for PBXProject "College_Cookbook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 440530D11EA4156D0096F1CF;
+			productRefGroup = 440530DB1EA4156D0096F1CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				440530D91EA4156D0096F1CF /* College_Cookbook */,
+				440530ED1EA4156D0096F1CF /* College_CookbookTests */,
+				440530F81EA4156D0096F1CF /* College_CookbookUITests */,
+				440531011EA4156D0096F1CF /* College_Cookbook WatchKit App */,
+				440531101EA4156E0096F1CF /* College_Cookbook WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		440530D81EA4156D0096F1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440530E81EA4156D0096F1CF /* LaunchScreen.storyboard in Resources */,
+				440530E51EA4156D0096F1CF /* Assets.xcassets in Resources */,
+				440530E31EA4156D0096F1CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		440530EC1EA4156D0096F1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		440530F71EA4156D0096F1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		440531001EA4156D0096F1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4405310B1EA4156D0096F1CF /* Assets.xcassets in Resources */,
+				440531091EA4156D0096F1CF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4405310F1EA4156E0096F1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4405311F1EA4156E0096F1CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		440530D61EA4156D0096F1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444EFE6F1EAD84CD0092481D /* MasterViewController.swift in Sources */,
+				444EFE6E1EAD84CD0092481D /* DetailViewController.swift in Sources */,
+				440530E01EA4156D0096F1CF /* ViewController.swift in Sources */,
+				440530DE1EA4156D0096F1CF /* AppDelegate.swift in Sources */,
+				444EFE711EADC2060092481D /* recipeObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		440530EA1EA4156D0096F1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440530F31EA4156D0096F1CF /* College_CookbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		440530F51EA4156D0096F1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440530FE1EA4156D0096F1CF /* College_CookbookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4405310D1EA4156E0096F1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4405311D1EA4156E0096F1CF /* NotificationController.swift in Sources */,
+				4405311B1EA4156E0096F1CF /* ExtensionDelegate.swift in Sources */,
+				440531191EA4156E0096F1CF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		440530F01EA4156D0096F1CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 440530D91EA4156D0096F1CF /* College_Cookbook */;
+			targetProxy = 440530EF1EA4156D0096F1CF /* PBXContainerItemProxy */;
+		};
+		440530FB1EA4156D0096F1CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 440530D91EA4156D0096F1CF /* College_Cookbook */;
+			targetProxy = 440530FA1EA4156D0096F1CF /* PBXContainerItemProxy */;
+		};
+		440531051EA4156D0096F1CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 440531011EA4156D0096F1CF /* College_Cookbook WatchKit App */;
+			targetProxy = 440531041EA4156D0096F1CF /* PBXContainerItemProxy */;
+		};
+		440531141EA4156E0096F1CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 440531101EA4156E0096F1CF /* College_Cookbook WatchKit Extension */;
+			targetProxy = 440531131EA4156E0096F1CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		440530E11EA4156D0096F1CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440530E21EA4156D0096F1CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		440530E61EA4156D0096F1CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440530E71EA4156D0096F1CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		440531071EA4156D0096F1CF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440531081EA4156D0096F1CF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		440531211EA4156E0096F1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		440531221EA4156E0096F1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		440531241EA4156E0096F1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "College_Cookbook WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-Cookbook.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		440531251EA4156E0096F1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "College_Cookbook WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-Cookbook.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		440531281EA4156E0096F1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = College_Cookbook_WatchKit_Extension;
+				INFOPLIST_FILE = "College_Cookbook WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-Cookbook.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		440531291EA4156E0096F1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = College_Cookbook_WatchKit_Extension;
+				INFOPLIST_FILE = "College_Cookbook WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-Cookbook.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		4405312C1EA4156E0096F1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = College_Cookbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-Cookbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4405312D1EA4156E0096F1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = College_Cookbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-Cookbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4405312F1EA4156E0096F1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = College_CookbookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-CookbookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/College_Cookbook.app/College_Cookbook";
+			};
+			name = Debug;
+		};
+		440531301EA4156E0096F1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = College_CookbookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-CookbookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/College_Cookbook.app/College_Cookbook";
+			};
+			name = Release;
+		};
+		440531321EA4156E0096F1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = College_CookbookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-CookbookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = College_Cookbook;
+			};
+			name = Debug;
+		};
+		440531331EA4156E0096F1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = College_CookbookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CollegeCB-Team.College-CookbookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = College_Cookbook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		440530D51EA4156D0096F1CF /* Build configuration list for PBXProject "College_Cookbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440531211EA4156E0096F1CF /* Debug */,
+				440531221EA4156E0096F1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		440531231EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_Cookbook WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440531241EA4156E0096F1CF /* Debug */,
+				440531251EA4156E0096F1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		440531271EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_Cookbook WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440531281EA4156E0096F1CF /* Debug */,
+				440531291EA4156E0096F1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4405312B1EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_Cookbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4405312C1EA4156E0096F1CF /* Debug */,
+				4405312D1EA4156E0096F1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4405312E1EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_CookbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4405312F1EA4156E0096F1CF /* Debug */,
+				440531301EA4156E0096F1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		440531311EA4156E0096F1CF /* Build configuration list for PBXNativeTarget "College_CookbookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440531321EA4156E0096F1CF /* Debug */,
+				440531331EA4156E0096F1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 440530D21EA4156D0096F1CF /* Project object */;
+}
