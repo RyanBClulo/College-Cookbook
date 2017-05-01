@@ -9,11 +9,11 @@
 import Foundation
 
 class recipeObject{
-    var title:String?
-    var ingrediants:String?
-    var steps:String?
+    var title:Array<Any>?
+    var ingrediants:Array<Any>?
+    var steps:Array<Any>?
     
-    init(titleInput:String, ingrediantsInput:String, stepsInput:String){
+    init(titleInput:Array<Any>, ingrediantsInput:Array<Any>, stepsInput:Array<Any>){
         title = titleInput
         ingrediants = ingrediantsInput
         steps = stepsInput

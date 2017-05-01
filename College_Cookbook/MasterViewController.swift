@@ -15,7 +15,7 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
     
-    let entry1 = recipeObject(titleInput: "Boil Water", ingrediantsInput: "Water", stepsInput: "Bring water to boil")
+    let entry1 = recipeObject(titleInput: ["Boil Water"], ingrediantsInput: ["Water", "Cooking Pot"], stepsInput: ["Place pot filled with water on stove.", "Turn stove on.", "Wait."])
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(_ sender: Any) {
-        recipeTable.insert(recipeObject(titleInput: "Sample", ingrediantsInput: "Sample", stepsInput: "Sample"), at: 0)
+        recipeTable.insert(recipeObject(titleInput: ["Sample Title"], ingrediantsInput: ["Ingrediant 1", "Ingrediant 2"], stepsInput: ["Step 1", "Step 2"]), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
     }
@@ -58,7 +58,7 @@ class MasterViewController: UITableViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let object = recipeTable[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object as? String
+                controller.detailItem? = (object.title as Array<Any>?)!
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
