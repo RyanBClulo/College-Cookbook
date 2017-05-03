@@ -16,7 +16,17 @@ class MasterViewController: UITableViewController {
     var objects = [Any]()
     
     let entry1 = recipeObject(titleInput: ["Boil Water"], ingrediantsInput: ["Water", "Cooking Pot"], stepsInput: ["Place pot filled with water on stove.", "Turn stove on.", "Wait."])
-
+    let entry2 = recipeObject(titleInput: ["Grilled Cheese Sandwich"], ingrediantsInput: ["Two slices of bread", "Cheese (Any flavor)", "Butter"],
+                              stepsInput:["Evenly butter one side of each slice of bread.", "Lay one piece of bread in a frying pan on a medium heat stove.",
+                                          "Place slices of cheese on the slice of bread. Then, place the second slice of bread on top of the cheese with the buttered side facing up.",
+                                          "Cook on stove until both sides are golden brown.", "Enjoy."])
+    let entry3 = recipeObject(titleInput: ["Mac and Cheese"], ingrediantsInput: [], stepsInput: [])
+    let entry4 = recipeObject(titleInput: ["Tacos"], ingrediantsInput: [], stepsInput: []);
+    let entry5 = recipeObject(titleInput: ["Pan-fried Chicken"], ingrediantsInput: [], stepsInput: [])
+    let entry6 = recipeObject(titleInput: ["Chicken Alfredo"], ingrediantsInput: [], stepsInput: [])
+    let entry7 = recipeObject(titleInput: ["Chocolate Chip Cookies"], ingrediantsInput: [], stepsInput: [])
+    let entry8 = recipeObject(titleInput: ["Scrambled Egss with Vegetables"], ingrediantsInput: [], stepsInput: [])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,11 +40,16 @@ class MasterViewController: UITableViewController {
         }
         
         recipeTable.insert(entry1, at: 0)
+        recipeTable.insert(entry2, at: 1)
+        recipeTable.insert(entry3, at: 2)
+        recipeTable.insert(entry4, at: 3)
+        recipeTable.insert(entry5, at: 4)
+        recipeTable.insert(entry6, at: 5)
+        recipeTable.insert(entry7, at: 6)
+        recipeTable.insert(entry8, at: 7)
         
     }
     
-    
-
     override func viewWillAppear(_ animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
@@ -58,7 +73,8 @@ class MasterViewController: UITableViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let object = recipeTable[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem? = (object.title as Array<Any>?)!
+                controller.detailItem = object
+                //print(controller.detailItem as Any)
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -79,7 +95,9 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         let object = recipeTable[indexPath.row]
-        cell.textLabel!.text = object.title?.description
+        //cell.textLabel?.text = (object.title?.description)!
+        cell.textLabel?.text = (object.title?.description)!.description as String
+        //print((cell.textLabel?.text)! as String)
         return cell
     }
 

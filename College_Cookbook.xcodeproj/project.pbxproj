@@ -25,6 +25,7 @@
 		444EFE6E1EAD84CD0092481D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFE6C1EAD84CD0092481D /* DetailViewController.swift */; };
 		444EFE6F1EAD84CD0092481D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFE6D1EAD84CD0092481D /* MasterViewController.swift */; };
 		444EFE711EADC2060092481D /* recipeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFE701EADC2060092481D /* recipeObject.swift */; };
+		4474B0D01EBA4EE3008E4D57 /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4474B0CF1EBA4EE3008E4D57 /* StepsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		444EFE6C1EAD84CD0092481D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		444EFE6D1EAD84CD0092481D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		444EFE701EADC2060092481D /* recipeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipeObject.swift; sourceTree = "<group>"; };
+		4474B0CF1EBA4EE3008E4D57 /* StepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				440530DD1EA4156D0096F1CF /* AppDelegate.swift */,
 				444EFE6C1EAD84CD0092481D /* DetailViewController.swift */,
+				4474B0CF1EBA4EE3008E4D57 /* StepsViewController.swift */,
 				444EFE6D1EAD84CD0092481D /* MasterViewController.swift */,
 				440530DF1EA4156D0096F1CF /* ViewController.swift */,
 				440530E11EA4156D0096F1CF /* Main.storyboard */,
@@ -435,6 +438,7 @@
 				444EFE6E1EAD84CD0092481D /* DetailViewController.swift in Sources */,
 				440530E01EA4156D0096F1CF /* ViewController.swift in Sources */,
 				440530DE1EA4156D0096F1CF /* AppDelegate.swift in Sources */,
+				4474B0D01EBA4EE3008E4D57 /* StepsViewController.swift in Sources */,
 				444EFE711EADC2060092481D /* recipeObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

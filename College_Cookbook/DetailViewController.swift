@@ -21,14 +21,28 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let label = self.recipeTitle {
-                (label.text)! = detail.description
+                label.text = detail.title!.description
             }
+            if let label = self.ingrediantsList{
+                label.text = detail.ingrediants!.description
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showSteps" {
+                let object = detailItem
+                let controller = (segue.destination) as! StepsViewController
+                controller.stepsItem = object
+                //print(controller.detailItem as Any)
+                //print(controller.stepsItem?.title! as Any)
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       	 
         self.configureView()
     }
 
@@ -37,7 +51,7 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: Array<Any>? {
+    var detailItem: recipeObject? {
         didSet {
             // Update the view.
             self.configureView()
