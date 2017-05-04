@@ -31,28 +31,28 @@ class DetailViewController: UIViewController {
             }
         }
         
-        if (name == "[\"Boil Water\"]"){
+        if (name == "Boil Water"){
             recipeImage.image = #imageLiteral(resourceName: "water")
         }
-        else if(name == "[\"Grilled Cheese Sandwich\"]"){
+        else if(name == "Grilled Cheese Sandwich"){
             recipeImage.image = #imageLiteral(resourceName: "grilledcheese")
         }
-        else if(name == "[\"Mac and Cheese\"]"){
+        else if(name == "Mac and Cheese"){
             recipeImage.image = #imageLiteral(resourceName: "mac")
         }
-        else if(name == "[\"Tacos\"]"){
+        else if(name == "Tacos"){
             recipeImage.image = #imageLiteral(resourceName: "tacos")
         }
-        else if(name == "[\"Pan-fried Chicken\"]"){
+        else if(name == "Pan-fried Chicken"){
             recipeImage.image = #imageLiteral(resourceName: "chicken")
         }
-        else if(name == "[\"Chicken Alfredo\"]"){
+        else if(name == "Chicken Alfredo"){
             recipeImage.image = #imageLiteral(resourceName: "alfredo")
         }
-        else if(name == "[\"Chocolate Chip Cookies\"]"){
+        else if(name == "Chocolate Chip Cookies"){
             recipeImage.image = #imageLiteral(resourceName: "cookies")
         }
-        else if(name == "[\"Scrambled Eggs with Vegetables\"]"){
+        else if(name == "Scrambled Eggs with Vegetables"){
             recipeImage.image = #imageLiteral(resourceName: "eggs")
         }
         

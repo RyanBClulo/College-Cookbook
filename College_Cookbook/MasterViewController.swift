@@ -9,31 +9,32 @@
 import UIKit
 
 var recipeTable = [recipeObject]()
+var name:String = ""
 
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
     
-    let entry1 = recipeObject(titleInput: ["Boil Water"], ingrediantsInput: ["Water", "Cooking Pot"], stepsInput: ["Place pot filled with water on stove.", "Turn stove on.", "Wait."])
-    let entry2 = recipeObject(titleInput: ["Grilled Cheese Sandwich"], ingrediantsInput: ["Two slices of bread", "Cheese (Any flavor)", "Butter"],
+    let entry1 = recipeObject(titleInput: "Boil Water", ingrediantsInput: ["Water", "Cooking Pot"], stepsInput: ["Place pot filled with water on stove.", "Turn stove on.", "Wait."])
+    let entry2 = recipeObject(titleInput: "Grilled Cheese Sandwich", ingrediantsInput: ["Two slices of bread", "Cheese (Any flavor, any desired amount)", "Butter"],
                               stepsInput:["Evenly butter one side of each slice of bread.", "Lay one piece of bread in a frying pan on a medium heat stove.",
-                                          "Place slices of cheese on the slice of bread. Then, place the second slice of bread on top of the cheese with the buttered side facing up.",
-                                          "Cook on stove until both sides are golden brown.", "Enjoy."])
-    let entry3 = recipeObject(titleInput: ["Mac and Cheese"], ingrediantsInput: [], stepsInput: [])
-    let entry4 = recipeObject(titleInput: ["Tacos"], ingrediantsInput: [], stepsInput: []);
-    let entry5 = recipeObject(titleInput: ["Pan-fried Chicken"], ingrediantsInput: [], stepsInput: [])
-    let entry6 = recipeObject(titleInput: ["Chicken Alfredo"], ingrediantsInput: [], stepsInput: [])
-    let entry7 = recipeObject(titleInput: ["Chocolate Chip Cookies"], ingrediantsInput: [], stepsInput: [])
-    let entry8 = recipeObject(titleInput: ["Scrambled Eggs with Vegetables"], ingrediantsInput: [], stepsInput: [])
+                                          "Place slices of cheese on the bread. Then, place the second slice of bread on top of the cheese with the buttered side facing up.",
+                                          "Cook each side for 3 minutes or until both sides are golden brown.", "Enjoy."])
+    let entry3 = recipeObject(titleInput: "Mac and Cheese", ingrediantsInput: [], stepsInput: [])
+    let entry4 = recipeObject(titleInput: "Tacos", ingrediantsInput: [], stepsInput: []);
+    let entry5 = recipeObject(titleInput: "Pan-fried Chicken", ingrediantsInput: [], stepsInput: [])
+    let entry6 = recipeObject(titleInput: "Chicken Alfredo", ingrediantsInput: [], stepsInput: [])
+    let entry7 = recipeObject(titleInput: "Chocolate Chip Cookies", ingrediantsInput: [], stepsInput: [])
+    let entry8 = recipeObject(titleInput: "Scrambled Eggs with Vegetables", ingrediantsInput: [], stepsInput: [])
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        self.navigationItem.rightBarButtonItem = addButton
+        //let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
+        //self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
@@ -61,7 +62,7 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(_ sender: Any) {
-        recipeTable.insert(recipeObject(titleInput: ["Sample Title"], ingrediantsInput: ["Ingrediant 1", "Ingrediant 2"], stepsInput: ["Step 1", "Step 2"]), at: 0)
+        recipeTable.insert(recipeObject(titleInput: "Sample Title", ingrediantsInput: ["Ingrediant 1", "Ingrediant 2"], stepsInput: ["Step 1", "Step 2"]), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
     }
@@ -96,8 +97,35 @@ class MasterViewController: UITableViewController {
 
         let object = recipeTable[indexPath.row]
         //cell.textLabel?.text = (object.title?.description)!
-        cell.textLabel?.text = (object.title?.description)!.description as String
-        //print((cell.textLabel?.text)! as String)
+        cell.textLabel?.text = object.title?.description
+        name = (cell.textLabel?.text)!
+        
+        if (name == "Boil Water"){
+            cell.imageView?.image = #imageLiteral(resourceName: "water")
+        }
+        else if(name == "Grilled Cheese Sandwich"){
+            cell.imageView?.image = #imageLiteral(resourceName: "grilledcheese")
+        }
+        else if(name == "Mac and Cheese"){
+            cell.imageView?.image = #imageLiteral(resourceName: "mac")
+        }
+        else if(name == "Tacos"){
+            cell.imageView?.image = #imageLiteral(resourceName: "tacos")
+        }
+        else if(name == "Pan-fried Chicken"){
+            cell.imageView?.image = #imageLiteral(resourceName: "chicken")
+        }
+        else if(name == "Chicken Alfredo"){
+            cell.imageView?.image = #imageLiteral(resourceName: "alfredo")
+        }
+        else if(name == "Chocolate Chip Cookies"){
+            cell.imageView?.image = #imageLiteral(resourceName: "cookies")
+        }
+        else if(name == "Scrambled Eggs with Vegetables"){
+            cell.imageView?.image = #imageLiteral(resourceName: "eggs")
+        }
+
+        
         return cell
     }
 

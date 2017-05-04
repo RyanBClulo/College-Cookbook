@@ -64,28 +64,28 @@ class StepsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.configureView()
         
-        if (name == "[\"Boil Water\"]"){
+        if (name == "Boil Water"){
             stepsImage.image = #imageLiteral(resourceName: "water")
         }
-        else if(name == "[\"Grilled Cheese Sandwich\"]"){
+        else if(name == "Grilled Cheese Sandwich"){
             stepsImage.image = #imageLiteral(resourceName: "grilledcheese")
         }
-        else if(name == "[\"Mac and Cheese\"]"){
+        else if(name == "Mac and Cheese"){
             stepsImage.image = #imageLiteral(resourceName: "mac")
         }
-        else if(name == "[\"Tacos\"]"){
+        else if(name == "Tacos"){
             stepsImage.image = #imageLiteral(resourceName: "tacos")
         }
-        else if(name == "[\"Pan-fried Chicken\"]"){
+        else if(name == "Pan-fried Chicken"){
             stepsImage.image = #imageLiteral(resourceName: "chicken")
         }
-        else if(name == "[\"Chicken Alfredo\"]"){
+        else if(name == "Chicken Alfredo"){
             stepsImage.image = #imageLiteral(resourceName: "alfredo")
         }
-        else if(name == "[\"Chocolate Chip Cookies\"]"){
+        else if(name == "Chocolate Chip Cookies"){
             stepsImage.image = #imageLiteral(resourceName: "cookies")
         }
-        else if(name == "[\"Scrambled Eggs with Vegetables\"]"){
+        else if(name == "Scrambled Eggs with Vegetables"){
             stepsImage.image = #imageLiteral(resourceName: "eggs")
         }
 
