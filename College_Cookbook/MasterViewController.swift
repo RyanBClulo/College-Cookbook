@@ -14,6 +14,7 @@ var name:String = ""
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
+    var managedObjectContext: NSObject? = nil
     var objects = [Any]()
     
     let entry1 = recipeObject(titleInput: "Boil Water", ingrediantsInput: ["Water", "Cooking Pot"], stepsInput: ["Place pot filled with water on stove.", "Turn stove on.", "Wait."])
@@ -21,12 +22,18 @@ class MasterViewController: UITableViewController {
                               stepsInput:["Evenly butter one side of each slice of bread.", "Lay one piece of bread in a frying pan on a medium heat stove.",
                                           "Place slices of cheese on the bread. Then, place the second slice of bread on top of the cheese with the buttered side facing up.",
                                           "Cook each side for 3 minutes or until both sides are golden brown.", "Enjoy."])
-    let entry3 = recipeObject(titleInput: "Mac and Cheese", ingrediantsInput: [], stepsInput: [])
-    let entry4 = recipeObject(titleInput: "Tacos", ingrediantsInput: [], stepsInput: []);
-    let entry5 = recipeObject(titleInput: "Pan-fried Chicken", ingrediantsInput: [], stepsInput: [])
-    let entry6 = recipeObject(titleInput: "Chicken Alfredo", ingrediantsInput: [], stepsInput: [])
-    let entry7 = recipeObject(titleInput: "Chocolate Chip Cookies", ingrediantsInput: [], stepsInput: [])
-    let entry8 = recipeObject(titleInput: "Scrambled Eggs with Vegetables", ingrediantsInput: [], stepsInput: [])
+    let entry3 = recipeObject(titleInput: "Mac and Cheese", ingrediantsInput: ["One box of mac and cheese from your favorite brand!","1/4 cup of Milk", "4 Tbsp. of Butter"],
+                              stepsInput: ["Bring a pot of water on the stove to a boil and add the pasta.", "Slightly reduced the heat of the stove. Cook the pasta until it is tender.",
+                                           "Once tender, strain the pasta and put it back in the pot.", "Add the milk and the butter to the pasta. Stir until they are completely mixed in.",
+                                           "Add in the packet of cheese powder provided in the box. Stir until all of the powder is equally mixed throughout the pasta.", "Enjoy a classic, tasty meal!"])
+    let entry4 = recipeObject(titleInput: "Tacos", ingrediantsInput: ["Ground beef, chicken, or beans","One packet of taco seasoning","Softshell Tortillas/Hard Taco Shells","Shredded Cheese", "Lettuce", "Tomato"],
+                              stepsInput: ["Cook your choice of meat/beans in a pan. For beef or chicken, add the packet of taco seasoning and a little bit of water to the pan and cook until it darkens. For beans, cook until warm.",
+                                           "Once the meat/beans is/are fully cooked, add a small amount to a tortilla or hard shell.","Add desired amount of shredded cheese, diced tomato, and lettuce.",
+                                           "Celebrate your work with a delicious meal!"]);
+    let entry5 = recipeObject(titleInput: "Pan-fried Chicken", ingrediantsInput: [""], stepsInput: [""])
+    let entry6 = recipeObject(titleInput: "Chicken Alfredo", ingrediantsInput: [""], stepsInput: [""])
+    let entry7 = recipeObject(titleInput: "Chocolate Chip Cookies", ingrediantsInput: [""], stepsInput: [""])
+    let entry8 = recipeObject(titleInput: "Scrambled Eggs with Vegetables", ingrediantsInput: [""], stepsInput: [""])
     
     override func viewDidLoad() {
         super.viewDidLoad()
