@@ -86,7 +86,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="RSX-iN-9Zp"/>
+                    <navigationItem key="navigationItem" title="College Cookbook" id="RSX-iN-9Zp"/>
                     <connections>
                         <outlet property="ingrediantsList" destination="aQl-if-Tew" id="EWD-OM-OZK"/>
                         <outlet property="recipeImage" destination="JpQ-g9-i1R" id="siy-JC-HUE"/>
@@ -232,7 +232,7 @@
                             <outlet property="delegate" destination="SWr-Lt-C2m" id="bjo-0T-1rx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Recipe List" id="VEr-vD-eEV" colorLabel="IBBuiltInLabel-Orange"/>
+                    <navigationItem key="navigationItem" title="College Cookbook" id="VEr-vD-eEV" colorLabel="IBBuiltInLabel-Orange"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GzP-DQ-UiI" sceneMemberID="firstResponder"/>
             </objects>

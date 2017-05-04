@@ -25,7 +25,6 @@ class DetailViewController: UIViewController {
             if let label = self.recipeTitle {
                 label.text = detail.title!.description
                 name = detail.title!.description
-                print(name)
             }
             if let label = self.ingrediantsList{
                 label.text = detail.ingrediants!.description

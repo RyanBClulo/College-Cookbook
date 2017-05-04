@@ -33,20 +33,20 @@ class StepsViewController: UIViewController {
                 prevOutlet.isHidden = false
                 msgeLabel.text = ""
                 stepsLabel.text = stepsItem?.steps?[stepsPlace]
-                //print(stepsPlace)
+                print(stepsPlace)
             }
         
         }
 
     @IBAction func prevStep(_ sender: Any) {
         stepsPlace -= 1
-        if(0 < stepsPlace)
+        if(-1 < stepsPlace)
         {
             prevOutlet.isHidden = false
             nextOutlet.isHidden = false
             msgeLabel.text = ""
             stepsLabel.text = stepsItem?.steps?[stepsPlace]
-            //print(stepsPlace)
+            print(stepsPlace)
         }
         else {
             msgeLabel.text = "You are at the first step!"
