@@ -19,6 +19,7 @@ class StepsViewController: UIViewController {
     
     
     var stepsPlace = 0
+    var name:String = ""
     
     @IBAction func nextStep(_ sender: Any) {
         stepsPlace += 1
@@ -32,10 +33,11 @@ class StepsViewController: UIViewController {
                 prevOutlet.isHidden = false
                 msgeLabel.text = ""
                 stepsLabel.text = stepsItem?.steps?[stepsPlace]
-                print(stepsPlace)
+                //print(stepsPlace)
             }
+        
         }
-    
+
     @IBAction func prevStep(_ sender: Any) {
         stepsPlace -= 1
         if(0 < stepsPlace)
@@ -44,7 +46,7 @@ class StepsViewController: UIViewController {
             nextOutlet.isHidden = false
             msgeLabel.text = ""
             stepsLabel.text = stepsItem?.steps?[stepsPlace]
-            print(stepsPlace)
+            //print(stepsPlace)
         }
         else {
             msgeLabel.text = "You are at the first step!"
@@ -61,6 +63,32 @@ class StepsViewController: UIViewController {
         //recipeTitle.text = recipeTable.first?.title!.description
         // Do any additional setup after loading the view.
         self.configureView()
+        
+        if (name == "[\"Boil Water\"]"){
+            stepsImage.image = #imageLiteral(resourceName: "water")
+        }
+        else if(name == "[\"Grilled Cheese Sandwich\"]"){
+            stepsImage.image = #imageLiteral(resourceName: "grilledcheese")
+        }
+        else if(name == "[\"Mac and Cheese\"]"){
+            stepsImage.image = #imageLiteral(resourceName: "mac")
+        }
+        else if(name == "[\"Tacos\"]"){
+            stepsImage.image = #imageLiteral(resourceName: "tacos")
+        }
+        else if(name == "[\"Pan-fried Chicken\"]"){
+            stepsImage.image = #imageLiteral(resourceName: "chicken")
+        }
+        else if(name == "[\"Chicken Alfredo\"]"){
+            stepsImage.image = #imageLiteral(resourceName: "alfredo")
+        }
+        else if(name == "[\"Chocolate Chip Cookies\"]"){
+            stepsImage.image = #imageLiteral(resourceName: "cookies")
+        }
+        else if(name == "[\"Scrambled Eggs with Vegetables\"]"){
+            stepsImage.image = #imageLiteral(resourceName: "eggs")
+        }
+
     }
     
     func configureView() {
@@ -68,6 +96,7 @@ class StepsViewController: UIViewController {
         if let detail = self.stepsItem {
             if let label = self.stepsTitle {
                 label.text = detail.title!.description
+                name = detail.title!.description
             }
             if let label = self.stepsLabel{
                 label.text = detail.steps?[stepsPlace]

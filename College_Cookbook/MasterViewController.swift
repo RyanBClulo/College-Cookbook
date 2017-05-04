@@ -25,7 +25,7 @@ class MasterViewController: UITableViewController {
     let entry5 = recipeObject(titleInput: ["Pan-fried Chicken"], ingrediantsInput: [], stepsInput: [])
     let entry6 = recipeObject(titleInput: ["Chicken Alfredo"], ingrediantsInput: [], stepsInput: [])
     let entry7 = recipeObject(titleInput: ["Chocolate Chip Cookies"], ingrediantsInput: [], stepsInput: [])
-    let entry8 = recipeObject(titleInput: ["Scrambled Egss with Vegetables"], ingrediantsInput: [], stepsInput: [])
+    let entry8 = recipeObject(titleInput: ["Scrambled Eggs with Vegetables"], ingrediantsInput: [], stepsInput: [])
     
     override func viewDidLoad() {
         super.viewDidLoad()
